@@ -8,7 +8,7 @@ var range = ["b7:d9","b12:d14","b17:d19","b22:d24", "b27:d29","b32:d34","b37:d39
 
 var url;
 for (var r=0;r<range.length;r++){
-  url="https://sheets.googleapis.com/v4/spreadsheets/1WXhmSvyF71IChh6sds8HvlgSZ1C_DVdjniNVL8lR-rk/values/b!"+range[r]+"?key=AIzaSyBXrr9mn-P9sWv5J9BY7Iw7m447wJ4kSeA";
+  url="https://sheets.googleapis.com/v4/spreadsheets/1WXhmSvyF71IChh6sds8HvlgSZ1C_DVdjniNVL8lR-rk/values/b!"+"b7:d39"+"?key=AIzaSyBXrr9mn-P9sWv5J9BY7Iw7m447wJ4kSeA";
 
 $.ajax({
      async: false,
@@ -18,11 +18,14 @@ $.ajax({
        $("p").append("<br>");
 
     var entry = data.values[0][0];
-    for(var i=0;i<3;i++){
-      for(var j=0;j<3;j++)
-      if (data.values[i][j]!=null) $("p").append(data.values[i][j]);
-     
-      $("p").append("<br>");
+    for(var z=0;z<8;z++){
+      for(var i=0;i<3;i++){
+        for(var j=0;j<3;j++)
+        if (data.values[i][j]!=null) $("p").append(data.values[z+i][j]);
+
+        $("p").append("<br>");
+      }
+      z+=3;
     }
 
     //aler
