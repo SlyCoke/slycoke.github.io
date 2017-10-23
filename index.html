@@ -16,9 +16,9 @@ $.ajax({
      success: function(data) {
 
 
-    var entry = data.values[0][0];
+    var entry = data.values;
     for(var i=0;i<38;i++){
-      for(var j=0;j<3;j++)if (data.values[i][j]!=null) $("p").append(data.values[i][j]);
+      for(var j=0;j<3;j++)if (entry[i][j]!=null) $("p").append(entry[i][j]);
       $("p").append("<br>");
      
       
