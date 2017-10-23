@@ -14,17 +14,67 @@ $.ajax({
      type: 'GET',
      url: url,
      success: function(data) {
-
-
     var entry = data.values;
-    for(var i=0;i<32;i++){
+    for(var i=0;i<40;i++){
       for(var j=0;j<3;j++)if (entry[i][j]!=null) $("p").append(entry[i][j]);
       $("p").append("<br>");
-     
-      
     }
 
-    //aler
+   }});
+      //=================================================================
+      url="https://sheets.googleapis.com/v4/spreadsheets/1WXhmSvyF71IChh6sds8HvlgSZ1C_DVdjniNVL8lR-rk/values/b!"+"f7:h39"+"?key=AIzaSyBXrr9mn-P9sWv5J9BY7Iw7m447wJ4kSeA";
+$.ajax({
+     async: false,
+     type: 'GET',
+     url: url,
+     success: function(data) {
+    var entry = data.values;
+    for(var i=0;i<40;i++){
+      for(var j=0;j<3;j++)if (entry[i][j]!=null) $("p").append(entry[i][j]);
+      $("p").append("<br>");
+    }
+
+   }});
+      //==================================
+      url="https://sheets.googleapis.com/v4/spreadsheets/1WXhmSvyF71IChh6sds8HvlgSZ1C_DVdjniNVL8lR-rk/values/b!"+"j7:l39"+"?key=AIzaSyBXrr9mn-P9sWv5J9BY7Iw7m447wJ4kSeA";
+$.ajax({
+     async: false,
+     type: 'GET',
+     url: url,
+     success: function(data) {
+    var entry = data.values;
+    for(var i=0;i<40;i++){
+      for(var j=0;j<3;j++)if (entry[i][j]!=null) $("p").append(entry[i][j]);
+      $("p").append("<br>");
+    }
+
+   }});
+      //==============================================
+      url="https://sheets.googleapis.com/v4/spreadsheets/1WXhmSvyF71IChh6sds8HvlgSZ1C_DVdjniNVL8lR-rk/values/b!"+"n7:p39"+"?key=AIzaSyBXrr9mn-P9sWv5J9BY7Iw7m447wJ4kSeA";
+$.ajax({
+     async: false,
+     type: 'GET',
+     url: url,
+     success: function(data) {
+    var entry = data.values;
+    for(var i=0;i<40;i++){
+      for(var j=0;j<3;j++)if (entry[i][j]!=null) $("p").append(entry[i][j]);
+      $("p").append("<br>");
+    }
+
+   }});
+      //==========================================
+      url="https://sheets.googleapis.com/v4/spreadsheets/1WXhmSvyF71IChh6sds8HvlgSZ1C_DVdjniNVL8lR-rk/values/b!"+"r7:t39"+"?key=AIzaSyBXrr9mn-P9sWv5J9BY7Iw7m447wJ4kSeA";
+$.ajax({
+     async: false,
+     type: 'GET',
+     url: url,
+     success: function(data) {
+    var entry = data.values;
+    for(var i=0;i<40;i++){
+      for(var j=0;j<3;j++)if (entry[i][j]!=null) $("p").append(entry[i][j]);
+      $("p").append("<br>");
+    }
 
    }});
 
