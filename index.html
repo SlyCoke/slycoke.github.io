@@ -10,9 +10,12 @@ var url;
 for (var r=0;r<range.length;r++){
   url="https://sheets.googleapis.com/v4/spreadsheets/1WXhmSvyF71IChh6sds8HvlgSZ1C_DVdjniNVL8lR-rk/values/b!"+range[r]+"?key=AIzaSyBXrr9mn-P9sWv5J9BY7Iw7m447wJ4kSeA";
 
-
-  $.get(url, function( data ) {
-   $("p").append("<br>");
+$.ajax({
+     async: false,
+     type: 'GET',
+     url: url,
+     success: function(data) {
+       $("p").append("<br>");
 
     var entry = data.values[0][0];
     for(var i=0;i<3;i++){
@@ -23,8 +26,11 @@ for (var r=0;r<range.length;r++){
     }
 
     //aler
-
-   });
+          //callback
+     }
+});
+  
+ 
  }
     });
   </script>
