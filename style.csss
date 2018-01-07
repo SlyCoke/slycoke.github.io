@@ -1,0 +1,209 @@
+/*
+* multi-line comment
+*/
+p{ line-height: 1em; }
+h1, h2, h3, h4{
+    color: orange;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+h1{ font-size: 1.7em; }
+h2{ font-size: 1.5em; }
+a{
+	color: black;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+
+body{
+    font-family: arial; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: blue;
+}
+/* you can put your code all in one line like above */
+#page{ margin: 0; }
+
+/* or on different lines like below */
+#navbar{
+    width: 100%;
+	display: inline-block;
+	background-color: red;
+    text-align:center;
+   
+}
+#container{
+    max-width:1200px;
+    margin:0 auto;
+}
+#logo{
+ padding: 10px;
+	font-family: georgia;
+	display: inline-block;
+	float:left;
+	
+}
+/* but try and be as concise as possible */
+#nav{
+	display: inline-block;
+	height:60px;
+}
+
+		#nav ul li{
+			display: inline-block;
+		}
+		#nav ul li a:active{ background-color: #ff8f00; }
+    	#nav ul li a, .dropbtn {
+            display: inline-block;
+             background: orange;
+				color: white;
+         text-align: center;
+             padding: 0px;
+             text-decoration: none;
+        }
+
+	    #nav ul li a:hover, .dropdown:hover .dropbtn {
+             background-color: #ffb424;
+			box-shadow: 0px 1px 1px #666;
+        }
+
+	    #nav ul li.dropdown {
+          display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+			
+
+#links{
+    
+}
+
+.icon-bar {
+    background-color: #555;
+ font-size: 24px;
+ color: white;
+    float: right;
+    padding:10px;
+}
+
+
+#banner{
+    height: 300px;
+    max-width:1200px;
+   background-image: url("https://i.imgur.com/Jbl5OmC.png"); 
+   background-repeat: no-repeat;
+   background-size: contain;
+   /*background size not supported everywhere*/
+   text-align:left;
+   padding:20px;
+}
+#left_banner{
+    display:inline-block;
+    width:70%;
+}
+.banner_text{
+    padding:20px;
+    color: white;
+    font-size:20px;
+    width:50%;
+}
+#vitlogo{
+    height: 60px;
+    width:200px;
+    margin-top:20px;
+   background-color:white;
+}
+.seemore{
+    padding:20px;
+    color: white;
+    width:100px;
+    background-color:white;
+    font-size:20px;
+}
+.twitch_users{
+    float:right;
+    height:80%;
+    padding:2px;
+    width:20%;
+    background-color:white;
+    
+}
+
+#content{
+	margin: 0px 0;
+	background: white;
+	padding: 20px;
+	clear: both;
+}
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 10px;
+}
+	#footer p{
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 80%;
+		color: grey;
+	}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* multiple styles seperated by a , */
+#content,
+ul li a{ box-shadow: 0px 1px 1px #999; }
