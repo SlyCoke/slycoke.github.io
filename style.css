@@ -115,7 +115,7 @@ body{
     max-width:1200px;
    background-image: url("vorago1500b300.png"); 
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: cover;
    /*background size not supported everywhere*/
    text-align:left;
    padding:20px;
