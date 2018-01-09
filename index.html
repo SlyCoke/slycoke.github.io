@@ -1,161 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- your webpage info goes here -->
-  <title>My First Website</title>	
-  <meta name="author" content="your name" />
+<title>My First Website</title>	
+	<meta name="author" content="your name" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="" />	
-	<link rel="stylesheet" href="style.css" type="text/css" />	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	
-	<script>
-	(function($) { // Begin jQuery
-  $(function() { // DOM ready
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.nav-dropdown').toggle();
-      // Close one dropdown when selecting another
-      $('.nav-dropdown').not($(this).siblings()).hide();
-      e.stopPropagation();
-    });
-    // Clicking away from dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.nav-dropdown').hide();
-    });
-    // Toggle open and close nav styles on click
-    $('#nav-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
-    // Hamburger to X toggle
-    $('#nav-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
-  }); // end DOM ready
-})(jQuery); // end jQuery
-
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
-<body>    
-    <div id="container">
-      <div id="navvv">
-        <section class="navigation">
-          <div class="nav-container">
-            <div class="brand">
-            </div>
-            <nav>
-              <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-              <ul class="nav-list">
-                <li>
-                  <a href="#!">Home</a>
-                </li>
-                <li>
-                  <a href="#!">About</a>
-                </li>
-                <li>
-                  <a href="#!">Services</a>
-                  <ul class="nav-dropdown">
-                    <li>
-                      <a href="#!">Web Design</a>
-                    </li>
-                    <li>
-                      <a href="#!">Web Development</a>
-                    </li>
-                    <li>
-                      <a href="#!">Graphic Design</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#!">Pricing</a>
-                </li>
-                <li>
-                  <a href="#!">Portfolio</a>
-                  <ul class="nav-dropdown">
-                    <li>
-                      <a href="#!">Web Design</a>
-                    </li>
-                    <li>
-                      <a href="#!">Web Development</a>
-                    </li>
-                    <li>
-                      <a href="#!">Graphic Design</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#!">Contact</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </section>
-</div>
-<div id="banner-container">
-<div id="banner">
+<body>
+	<div id="header">
+		<div id="nav-container">
+			<div id = "nav-bar">
+				<div id="logo"><h1><a href="/" id="logoLink"></a></h1></div>
+				<div class="topnav" id="myTopnav">
+					<a href="#home" class="active">HOME</a>
+					 <a href="#contact">EVENTS</a>
+					 <a href="#sdf"">GUIDES</a>
+					 <a href="about.html">ABOUT</a>
+					 <a href="#about">HISCORES</a>
+					 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="banner-container">
+		<div id="banner">
+			<div class="event_container"><div class="event_box"> event</div><div class="event_box"> event</div><div class="event_box">event </div></div>
+    		<div class="banner_text"><p>PvM / Community RuneScape clan. 2400+ total and membership required.</p>
+			<p id="see more"><a href="#about">See moreeeee</p></div>
+			<div class="twitch_users"><p> </p></div>
+		</div>
+	</div>
+	
 
-        <div id="vitlogo"></div>
-        
-         
-        <p class="banner_text">
-        				PvM / Community RuneScape clan. 2400+ total and membership required.
-        			</p>
-    			<div id="seemore"><a href="#about">See moreeeee</a></div>
-    
-
-   
-    		<div class="twitch_users"><p> asdffffffffffff</p></div>
-</div></div>
-<div id="content-container">
-    		<div id="content">
-    			
-
-<div id="London" class="tabcontent">
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_fjords.jpg">
-      <img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
+	<div id="content-container">
+    	<div id="content"> 			
+			<div class="tabcontent">
+			
+				<div class="gallery-resp">
+					<div class="gallery">
+						<a target="_blank" href="img_fjords.jpg">
+						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
+						</a>
+					<div class="desc">Newsssss thisw is newss</div>
+				  </div>
+				</div>
 
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
-      <img src="https://i.imgur.com/mb6swQW.png" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
+				<div class="gallery-resp">
+					<div class="gallery">
+						<a target="_blank" href="img_fjords.jpg">
+						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
+						</a>
+					<div class="desc">Evemnt tjos os am evemt</div>
+				  </div>
+				</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="https://i.imgur.com/mb6swQW.png" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
+				<div class="gallery-resp">
+					<div class="gallery">
+						<a target="_blank" href="img_fjords.jpg">
+						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
+						</a>
+					<div class="desc">Add a description of the image here</div>
+				  </div>
+				</div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="https://i.imgur.com/mb6swQW.png" alt="Mountains" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
+				<div class="gallery-resp">
+					<div class="gallery">
+						<a target="_blank" href="img_fjords.jpg">
+						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
+						</a>
+					<div class="desc">Add a description of the image here</div>
+				  </div>
+				</div>
 
-  </div>
-  </div>
-
-</div>
+			</div>
+		</div>
+	</div>
 
 	
+
 </body>
 </html>
