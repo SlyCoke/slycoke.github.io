@@ -1,48 +1,27 @@
-/*
-* multi-line comment
-*/
-p{ line-height: 1em; }
-a{	
-  color: black;
-	text-decoration: none;
-}
-	a:hover,
-	a:active{ text-decoration: underline; }
+body {font-family: arial;margin: 0; background:black;}
 
-/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
-
-body{
-    font-family: arial; margin: 0; background: black;
-}
-
-#page{ margin: 0; }
-
-
-#navbar{
-  width: 100%;
-	display: inline-block;
-	background-color: #1a1a1a;
+#nav-bar{
+    width: 100%;
+	background-color: inherit;
     text-align:center;
-   
+   text-align:center;
 }
-#banner-container{
-    width:100%;
-    background:blue;
-}
-#content-container{
-    width:100%;
-    background:red;
-    text-align:center;
-}
-#container{
+
+
+#header{
 
     margin:0 auto;
+	width:100%;
+    background-color: #1a1a1a;
 }
-#navvv{
+
+#nav-container{
     margin:auto;
     min-width:320px;
-    max-width:1200px;
+	max-width:1200px;
+	text-align:center;
 }
+
 #logo{
 	font-family: georgia;
 	display: inline-block;
@@ -55,229 +34,133 @@ body{
    height:40px;
 	
 }
-/* but try and be as concise as possible */
-// Navigation Variables
-$content-width: 800px;
-$breakpoint: 799px;
-$nav-height: 40px;
-$nav-background: #262626;
-$nav-font-color: #ffffff;
-$link-hover-color: #2581DC;
-
-// Outer navigation wrapper
-.navigation {
-  height: $nav-height;
-  background: $nav-background;
+.topnav {
+  overflow: hidden;text-align:center;
+  background-color: inherit;
 }
 
-// Logo and branding
-.brand {
-  position: absolute;
-  float: left;
-  line-height: $nav-height;
-  	background-image: url("https://i.imgur.com/mb6swQW.png"); 
-   background-repeat: no-repeat;
-   background-size: auto;
-   width:50px;
-   
-   height:40px;
-
+#myTopNav{
+	
+	text-align:center;
+}
+.topnav a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-// Container with no padding for navbar
-.nav-container {
-  max-width: $content-width;
-  margin: 0 auto;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-// Navigation 
-nav {
-  float: right;
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    li {
-      float: left;
-      position: relative;
-      a,
-      a:visited {
-        display: block;
-        padding: 0 20px;
-        line-height: $nav-height;
-        background: $nav-background;
-        color: $nav-font-color;
-        text-decoration: none;
-        &:hover {
-          background: $link-hover-color;
-          color: $nav-font-color;
-        }
-        &:not(:only-child):after {
-          padding-left: 4px;
-          content: ' ▾';
-        }
-      } // Dropdown list
-      ul li {
-        min-width: 190px;
-        a {
-          padding: 15px;
-          line-height: 20px;
-        }
-      }
-    }
-  }
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
 
-// Dropdown list binds to JS toggle event
-.nav-dropdown {
-  position: absolute;
+.topnav .icon {
   display: none;
-  z-index: 1;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Mobile navigation */
-
-// Binds to JS Toggle
-.nav-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background: $nav-background;
-  height: $nav-height;
-  width: $nav-height;
+#banner-container{
+    width:100%;
+    background:blue;
 }
-@media only screen and (max-width: 798px) {
-  // Hamburger nav visible on mobile only
-  .nav-mobile {
-    display: block;
-  }
-  nav {
-   width: 100%;
-    padding: $nav-height 0 15px;
-    ul {
-      display: none;
-      li {
-        float: none;
-        a {
-          padding: 15px;
-          line-height: 20px;
-        }
-        ul li a {
-          padding-left: 30px;
-        }
-      }
-    }
-  }
-  .nav-dropdown {
-    position: static;
-  }
-}
-@media screen and (min-width: $breakpoint) {
-  .nav-list {
-    display: block !important;
-  }
-}
-#nav-toggle {
-  position: absolute;
-  left: 0px;
-  top: 6px;
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
-  span,
-  span:before,
-  span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 25px;
-    background: $nav-font-color;
-    position: absolute;
-    display: block;
-    content: '';
-    transition: all 300ms ease-in-out;
-  }
-  span:before {
-    top: -10px;
-  }
-  span:after {
-    bottom: -10px;
-  }
-  &.active span {
-    background-color: transparent;
-    &:before,
-    &:after {
-      top: 0;
-    }
-    &:before {
-      transform: rotate(45deg);
-    }
-    &:after {
-      transform: rotate(-45deg);
-    }
-  }
+#content-container{
+    width:100%;
+    background:black;
+    text-align:center;
 }
 
-// Page content 
-article {
-  max-width: $content-width;
-  margin: 0 auto;
-  padding: 10px;
+.event_box{
+	border-style:solid;
+	border-color:white;
+	border-width: 1px;
+	display:inline-block;
+	margin:auto 50px;
+	border-radius:50%;
+	behavior:url(PIE.htc);
+	color:black;
+	height:150px;
+	width:150px;
+	font:10px;
+	background-color:white;
+}
+.event_container{
+	display:block;
+	position:absolute;
+	left: 0;
+    bottom: 30%;
+    right: 0;
+	
+	text-align: center;
+	margin:auto;
 }
 #banner{
     margin: 0 auto;
-    max-width:800px;
-    min-width:320px;
-   background-image: url("https://github.com/SlyCoke/slycoke.github.io/blob/master/vora.png?raw=true"); 
+    max-width:100%;
+	min-width:320px;
+	position:relative;
+	height:0;
+	padding-top:44.5%;
+   background-image: url("voragoo.png"); 
    background-repeat: no-repeat;
-   background-size: contain;
+   background-size: 100% auto;
    /*background size not supported everywhere*/
    text-align:center;
-   padding:10px;
 }
+
+
+
 .banner_text{
-    padding:2px;
-    color: white;
-    font-size:20px;
-    margin:auto;
-    width:100%;
+    position:absolute;
+    left: 0;
+    bottom: 15%;
+    right: 0;
+	font-weight:bold;
+	color:white;
+	font-size: 20px;
+	
 }
 #vitlogo{
-    
-    width:270px;
+font-size: 80px;
+font-family: Palatino Linotype;
+color: #ece6df;
+width:270px;
     height: 90px;
-    margin:40px auto 10px auto;
-    
-    background-image: url("https://github.com/SlyCoke/slycoke.github.io/blob/master/vitalisthin.png?raw=true"); 
-   background-repeat: no-repeat;
-   background-size: contain;
+    margin:40px auto 140px auto;
+text-shadow:0 0 10px #ffffff,0 0 20px #ffffff,0 0 30px #ffffff,0 0 40px #ece6df,0 0 70px #ece6df,0 0 80px #ece6df,0 0 100px #ece6df,0 0 170px #ece6df;}
+
+ 
 }
-#seemore{
-    padding:5px;
-    width:79px;
-    font-size:12px;
-    border-width:1px;
-    border-color:white;
-    border-style:solid;
-    margin:10px auto 10px;
-}
+
+
+
 #seemore a{
+	font-weight:bold;
+	color:white;
+	font-size: 20px;
+}
+#seemore a, a:visited{
     color: white;
 }
 .twitch_users{
-    display:inline-block;
-    height:30px;
-    padding:2px;
-    margin:5px auto;
-    width:20%;
+    position:absolute;
+    left: 0;
+    bottom: 5%;
+    right: 0;
     
 }
 
 #content{
 	margin: auto;
 	clear: both;
-	max-width:800px;
+	background:black;
+	max-width:1200px;
 }
 
 
@@ -286,7 +169,7 @@ article {
     display: inline-block;
     text-align: center;
     padding: 20px 12px;
-    background-color: white;
+    background-color: black;
     color:white;
 }
 div.gallery {
@@ -309,55 +192,71 @@ div.desc {
     padding: 15px;
     text-align: center;
 }
-
 * {
     box-sizing: border-box;
 }
-.topnav .icon {
-  display: none;
-}
-.responsive {
+.gallery-resp{
     padding: 0 6px;
     float: left;
     width: 24.99999%;
 }
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+@media screen and (max-width: 1400px) {
+	.event_box{
+		border-radius:0%;
+		height: 50px;
+	}
+	.event_container{
+		bottom: 37%;
+	}
 }
 
-@media only screen and (max-width: 700px){
-    .responsive {
+@media screen and (max-width: 1000px) {
+	.event_box{
+		border-radius:0%;
+		height: 30px;
+		width:100px;
+		margin: auto 20px;
+	}
+	.event_container{
+		bottom: 40%;
+	}
+}
+@media screen and (max-width: 800px) {
+	.event_container{
+		display:none;
+	}
+}
+@media screen and (max-width: 600px) {
+	
+	.gallery-resp {
         width: 49.99999%;
         margin: 6px 0;
     }
-    #banner{
-        min-width:400px;
-         background-image: url("https://i.imgur.com/mb6swQW.png"); 
-   background-repeat: no-repeat;
-   background-size: contain;
-    }
-    
-   #nav{display: none;}
-   #nav{float:right;
-   }
-  #nav a.icon {
-      float:right;
-    display:block;text-align:right;
+	.banner_text{
+		bottom:5%;
+	}
+	#seemore{
+		display:none;
+	}
+	.topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-    
+}
 
-    .topnav .responsiveb {float:right;}
-  .topnav .responsiveb a {
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
     float: none;
     display: block;
-    text-align: center;
+    text-align: left;
   }
+
 }
 
-@media screen and (max-width: 500px){
-    .responsive {
-        width: 100%;
-    }
-}
