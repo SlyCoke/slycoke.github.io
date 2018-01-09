@@ -233,10 +233,10 @@ div.desc {
         margin: 6px 0;
     }
 	.banner_text{
-		bottom:5%;
+		display:none;
 	}
 	#seemore{
-		display:none;
+		
 	}
 	.topnav a {display: none;}
   .topnav a.icon {
