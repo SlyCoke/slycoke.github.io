@@ -1,129 +1,129 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Vitalis Clan</title>	
+	<title>Vitalis Clan</title>	
 	<meta name="Cools" content="vitalis clan offsite" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
-<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<meta name="description" content="Welcome to the offsite of Vitalis. We are a RuneScape clan. We focus on PvM but we are a social clan as well. Come guest and check us out, and make sure to check out our discord!" />	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<script src="https://cdn.rawgit.com/Fugiman/Twitch-Channel-Status/1d74252edf89110507cbf3088f9c3eaa38fac9d3/twitch-channel-status.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
 </head>
 <body>
-	<div id="header">
-		<div id="nav-container">
-			<div id = "nav-bar">
-				<div id="logo"><h1><a href="/" id="logoLink"></a></h1></div>
-				<div class="topnav" id="myTopnav">
-					<a href="#home" class="active">HOME</a>
-					 <a href="#contact">EVENTS</a>
-					 <a href="#sdf"">GUIDES</a>
-					 <a href="about.html">ABOUT</a>
-					 <a href="#about">HISCORES</a>
-					 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="page">
 	
-	<div id="banner-container">
-		<div id="banner">
-			
-    		<div class="banner_text">
-			<h4>VITALIS</h4>
-			<p>PvM / Community RuneScape clan. 2400+ total and membership required.</p>
-			<p id="see more"><a href="#about">See moreeeee</p>
-			
-			<div class="twitch_users"><p> Currently streaming </p>
-			<div class="twitch"><div class = "users"></div></div>
-			
-			
-			</div>
-			
-			</div>
-			
-			<div class="banner-gallery">
-			<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
+		<!---header--->
+		<div class="header">
+			<div class="nav-container">
+				<div class = "nav-bar">
+					<div class="logo"><h1><a href="/" id="logoLink"></a></h1></div>
+					<div class="topnav" id="myTopnav">
+						<a href="index.html" class="active">HOME</a>
+						<a href="about.html">ABOUT</a>
+						<a href="guides.html">GUIDES</a>
+						<a href="events.html">EVENTS</a>
+						<a href="hiscores.html">HISCORES</a>
+						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+							&#9776;
 						</a>
-					<div class="desc">Newsssss thisw is newss</div>
-				  </div>
-				</div>
-				<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-					<div class="desc">Evemnt tjos os am evemt</div>
-				  </div>
-				</div>
-				<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-					<div class="desc">Add a description of the image here</div>
-				  </div>
-				</div>
-				<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-					<div class="desc">Add a description of the image here</div>
-				  </div>
-				</div>
-			</div>
-			
-			
-		</div>
-		
-		
-		
-	</div>
+					</div><!--end of top-nav div-->
+				</div><!--end of nav-bar div--->
+			</div><!--end of nav-container div--->
+		</div><!--end of header div--->
 	
-	<div id="content-container">
-    	<div id="content"> 			
-			
-			
-				<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-					<div class="desc">Newsssss thisw is newss</div>
-				  </div>
+		
+		<!---content--------------------------->
+		<div class="banner-container">
+			<div class="banner">				
+				
+				<div class="banner_text">
+					<h4>VITALIS</h4>
+					<p style='max-width:800px; margin-top:25px; line-height:150%;'>PvM / Community RuneScape clan. 2400+ total and membership required. We are a fast expanding clan with a unique ranking system that benefits both skillers and pvmers alike.</p>
+					<div class = "social_links">
+						<a href="about.html" target="_blank">
+							<div class = "social_link learn_more_button">LEARN MORE!</div>
+						</a>	
+					</div>
+				
+					<div class="twitch-streamers-container">
+						<p> Clannie Twitch Channels </p>
+						<div class="twitch-streamers-list">
+							<!---dynamically detected--->
+						</div>
+					</div>
+					
 				</div>
-				<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-					<div class="desc">Evemnt tjos os am evemt</div>
-				  </div>
+				
+				<div class="banner-gallery"></div>
+				
+				
+			</div><!--banner--->	
+		</div><!---banner container--->
+	
+		<div class="content-container">
+			<div class="lol">
+				<div class="content"> 		
+
+					<div class="featured-content-panel events">
+						<div class="panel-content-image-type">
+							<h1 class="title">News & Events</h1>
+							<div class="banner-gallery"></div>
+						</div>
+					</div>
+					
+					<div class="featured-content-panel pvm-guide">
+						<div class="panel-content">
+							<h1 class="title">PvM Guides</h1>
+							<p class="description">
+								Having trouble with a boss? Want to learn PvM but don't know where to start? What is PvM?
+								Check out our PvM Guides!
+							</p>
+							<div class = "cool-button">
+								<a href="boss_kc.html" target="_blank">BOSS KC</a>
+							</div>	
+							<div class = "cool-button">
+								<a href="boss_kc.html" target="_blank">BOSS KC</a>
+							</div>	
+							<div class = "cool-button">
+								<a href="boss_kc.html" target="_blank">BOSS KC</a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="featured-content-panel hiscores">
+						<div class="panel-content">
+							<h1 class="title">PvM Hiscores</h1>
+							<p class="description">
+								See how you rank in clan for Boss KC and Speed kill times!
+							</p>
+							<div class = "cool-button">
+								<a href="boss_kc.html" target="_blank">BOSS KC</a>
+							</div>
+							<div class = "cool-button">
+								<a href="speed_kill_times.html" target="_blank">SPEED KILL TIMES</a>
+							</div>
+						</div>
+					</div>
+					
 				</div>
-				<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-					<div class="desc">Add a description of the image here</div>
-				  </div>
-				</div>
-				<div class="gallery-resp">
-					<div class="gallery">
-						<a target="_blank" href="img_fjords.jpg">
-						<img src="https://i.imgur.com/mb6swQW.png" alt="Trolltunga Norway" width="300" height="200">
-						</a>
-					<div class="desc">Add a description of the image here</div>
-				  </div>
-				</div>
-			
+			</div>
 		</div>
-	</div>
-	<div class="footer"><div class="footer-content">ff</div></div>
+		
+		
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="leadership-display"></div>
+					<div class="social_links"></div>
+					<div class="social_links">For questions about the clan, contact staff ranks.</div>
+					<div class="credits">©2018. Site made by @slymonkey</div>
+				</div>
+			</div>
+		</div>
+	</div><!---end of page div--->
 </body>
 </html>
