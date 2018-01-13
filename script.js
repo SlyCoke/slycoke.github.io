@@ -18,7 +18,7 @@ function jQuery000000000000000_0000000000 (obj){
      async: false,
      type: 'GET',
 	 dataType:'jsonp',
-     url: "http://services.runescape.com/m=website-data/playerDetails.ws?names=%5B%22Cools%22%5D&callback=jQuery000000000000000_0000000000&_=0",
+     url: "https://services.runescape.com/m=website-data/playerDetails.ws?names=%5B%22Cools%22%5D&callback=jQuery000000000000000_0000000000&_=0",
      success: function(data) {
     console.log("woot");
     }
