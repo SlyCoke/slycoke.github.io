@@ -8,7 +8,7 @@ function myFunction() {
 }
 function jQuery000000000000000_0000000000 (obj){
 	
-	alert(obj[0].clan)
+	console.log(obj[0].clan)
 }
 
 
