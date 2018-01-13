@@ -163,7 +163,7 @@ function getFromTwitch(rsn, username){
 		 
 		//if(data2.stream!=null) $(".twitch").prepend("<img src=" + data2.stream.channel.logo + " width='40' height='40'>" + "<a href=" + data2.stream.channel.url + ">online</a>");
 		if(data2.stream!=null) $(".twitch-streamers-list").append("<div class='twitch-streamer-single'><div class='twitch-streamer-logo' style='background-image:url(" + data2.stream.channel.logo + "); background-size:cover;'></div><p class='twitch-streamer-rsn'>"+rsn+"->Online</p></div>");
-		else $(".twitch-streamers-list").append("<div class='twitch-streamer-single'><div class='twitch-streamer-logo'></div><p class='twitch-streamer-rsn'>"+rsn+"->offline</p></div>");
+		else $(".twitch-streamers-list").append("<div class='twitch-streamer-single'><div class='twitch-streamer-logo'></div><p class='twitch-streamer-rsn'>"+rsn+"->offffffline</p></div>");
 		 
     
   },error:function(){console.log("The requriest failed");}
