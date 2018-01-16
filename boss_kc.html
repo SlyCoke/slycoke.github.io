@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vitalis Clan</title>	
+	<meta name="Cools" content="vitalis clan offsite" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to the offsite of Vitalis. We are a RuneScape clan. We focus on PvM but we are a social clan as well. Come guest and check us out, and make sure to check out our discord!" />	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<script src="https://cdn.rawgit.com/Fugiman/Twitch-Channel-Status/1d74252edf89110507cbf3088f9c3eaa38fac9d3/twitch-channel-status.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
+</head>
+<body>
+	<div class="page">
+	
+		<div class="header">
+			<div class="nav-container">
+				<div class = "nav-bar">
+					<div class="logo"><h1><a href="/" id="logoLink"></a></h1></div>
+					<div class="topnav" id="myTopnav">
+						<a href="index.html" class="active">HOME</a>
+						<a href="about.html">ABOUT</a>
+						<a href="guides.html">GUIDES</a>
+						<a href="events.html">EVENTS</a>
+						<a href="boss_kc.html">BOSSKC</a>
+						<a href="speed_kill.html">SPEED</a>
+						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+							&#9776;
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="content-container">
+			<div class="lol">
+				<div class="content"> 		
+
+					
+					
+					<div class="content-panel small-intro">
+						<div class="panel-content-center">
+							<h1 class="title">Boss KC Hiscores </h1>
+							<p class="description small">
+								See where you rank in boss kill count amongst your clansmen/women</p>
+						</div>
+					</div>
+				
+					<div class="content-panel table ">
+						<div class="panel-content-center" id="boss_kc_case">
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="leadership-display"></div>
+					<div class="social_links"></div>
+					<div class="social_links">For questions about the clan, contact staff ranks.</div>
+					<!---<div class="credits">©2018. Site made by @slymonkey</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

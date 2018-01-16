@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vitalis Clan</title>	
+	<meta name="Cools" content="vitalis clan offsite" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to the offsite of Vitalis. We are a RuneScape clan. We focus on PvM but we are a social clan as well. Come guest and check us out, and make sure to check out our discord!" />	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<script src="https://cdn.rawgit.com/Fugiman/Twitch-Channel-Status/1d74252edf89110507cbf3088f9c3eaa38fac9d3/twitch-channel-status.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
+</head>
+<body>
+	<div class="page">
+	
+		<div class="header">
+			<div class="nav-container">
+				<div class = "nav-bar">
+					<div class="logo"><h1><a href="/" id="logoLink"></a></h1></div>
+					<div class="topnav" id="myTopnav">
+						<a href="index.html" class="active">HOME</a>
+						<a href="about.html">ABOUT</a>
+						<a href="guides.html">GUIDES</a>
+						<a href="events.html">EVENTS</a>
+						<a href="boss_kc.html">BOSSKC</a>
+						<a href="speed_kill.html">SPEED</a>
+						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+							&#9776;
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="content-container">
+			<div class="lol">
+				<div class="content"> 		
+
+					
+					
+					<div class="featured-content-panel about-intro">
+						<div class="panel-content-center">
+							<h1 class="title">About Us </h1>
+							<p class="description">
+								We are a community based and PvM driven clan that is always accepting new members! We're a fast expanding clan with a unique ranking system that benefits PvMers and Skillers alike. We're always looking for PvM teams for Vorago, Raids, etc. 
+							</p>
+						</div>
+					</div>
+				
+					<div class="featured-content-panel ranks">
+						<div class="panel-content">
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						
+						</div>
+					</div>
+					
+					<div class="featured-content-panel ranks">
+						<div class="panel-content">
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							</div>
+							</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>
+				
+				
+				
+						<div class="featured-content-panel ranks">
+						<div class="panel-content">
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Weapon Perks </h1>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#1: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Aftershock 3</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+							<table class="invperks">
+								<tr><td><h1 class="subtitle2">Gizmo#2: MH if dw</h1></td></tr>
+								<tr><td>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+									<div class="term-def-row perks">
+										<div class="term-container">
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>								
+											<div class="term-combo"><div class="term-logo"></div><div class ="term perk">Equilibrium 2</div></div>
+										</div>
+										<div class="def components">5 illujuankan</div>
+									</div>
+								</td></tr>
+							</table>
+						</div>
+						
+						
+						</div>
+					</div>
+					
+					
+					<div class="featured-content-panel ranks">
+						<div class="panel-content">
+						<div class="panel-content left" style='text-align:left;'>
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Gizmo#2: MH if dw</h1>
+							
+							<table class="perk-components-table">
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							
+							</table>
+							
+							
+						</div>
+						<div class="panel-content left" style='text-align:left;'>
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Gizmo#2: MH if dw</h1>
+							
+							<table class="perk-components-table">
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr><tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr><tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							</table>
+							
+							
+						</div>
+						
+						
+						<div class="panel-content left" style='text-align:left;'>
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<h1 class="subtitle2">Gizmo#2: MH if dw</h1>
+							
+							<table class="perk-components-table">
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							<tr>
+								<td><div class="term-combo"><div class="term-logo"></div><div class ="term perk">Precise 4</div></div>		</td>
+								<td><div class="def component-source">Refined Zaros Armor, Dragon Rider Lance</div></td>
+							</tr>
+							</table>
+							
+							
+						</div>
+						
+						</div>
+					</div>
+				
+				
+				
+				
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="leadership-display"></div>
+					<div class="social_links"></div>
+					<div class="social_links">For questions about the clan, contact staff ranks.</div>
+					<!---<div class="credits">©2018. Site made by @slymonkey</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

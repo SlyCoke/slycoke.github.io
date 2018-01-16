@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vitalis Clan</title>	
+	<meta name="Cools" content="vitalis clan offsite" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Welcome to the offsite of Vitalis. We are a RuneScape clan. We focus on PvM but we are a social clan as well. Come guest and check us out, and make sure to check out our discord!" />	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+		<script src="speed_kill_script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<script src="https://cdn.rawgit.com/Fugiman/Twitch-Channel-Status/1d74252edf89110507cbf3088f9c3eaa38fac9d3/twitch-channel-status.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
+	
+</head>
+<body>
+	<div class="page">
+	
+		<div class="header">
+			<div class="nav-container">
+				<div class = "nav-bar">
+					<div class="logo"><h1><a href="/" id="logoLink"></a></h1></div>
+					<div class="topnav" id="myTopnav">
+						<a href="index.html" class="active">HOME</a>
+						<a href="about.html">ABOUT</a>
+						<a href="guides.html">GUIDES</a>
+						<a href="events.html">EVENTS</a>
+						<a href="boss_kc.html">BOSSKC</a>
+						<a href="speed_kill.html">SPEED</a>
+						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+							&#9776;
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="content-container">
+			<div class="lol">
+				<div class="content"> 		
+
+					
+					
+					<div class="content-panel small-intro">
+						<div class="panel-content-center">
+							<h1 class="title">Boss KC Hiscores </h1>
+							<p class="description small">
+								See where you rank in boss kill count amongst your clansmen/women</p>
+						</div>
+					</div>
+				
+					<div class="content-panel table speed-kill">
+						<div class="panel-content-center" id="speed_kill_case">
+							<div class="tab">
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'all')" id="defaultOpen">All</button>
+			<button class="tablinks" onclick="openSpeedKillTab(event, 'araxxi')">Araxxi</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'beastmaster_durzag')">Beastmaster Durzag</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'giant_mole')">Giant Mole</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'gwd1')">GWD1</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'gwd2')">GWD2</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'har-aken')">Har-aken</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'kalphite_king')">Kalphite King</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'legiones')">Legiones</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'magister')">Magister</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'nex')">Nex</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'angel_of_death')">Nex: Angel of Death</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'queen_black_dragon')">Queen Black Dragon</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'rots')">Rise of the Six</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'telos')">Telos</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'tzok-jad')">Tzok-jad</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'vorago')">Vorago</button>
+								<button class="tablinks" onclick="openSpeedKillTab(event, 'yakamaru')">Yakamaru</button>
+							</div>
+
+							<div id="all" class="tabcontent">
+								<div class="araxxi sub-panel"></div>
+								<div class="beastmaster_durzag sub-panel"></div>
+								<div class="giant_mole sub-panel"></div>
+								<div class="gwd1 sub-panel"></div>
+								<div class="gwd2 sub-panel"></div>
+								<div class="har-aken sub-panel"></div>
+								<div class="kalphite_king sub-panel"></div>
+								<div class="legiones sub-panel"></div>
+								<div class="magister sub-panel"></div>
+								<div class="nex sub-panel"></div>
+								<div class="angel_of_death sub-panel"></div>
+								<div class="queen_black_dragon sub-panel"></div>
+								<div class="rots sub-panel"></div>
+								<div class="telos sub-panel"></div>
+								<div class="tzok-jad sub-panel"></div>
+								<div class="vorago sub-panel"></div>
+								<div class="yakamaru sub-panel"></div>
+							</div>
+							<div id="araxxi" class="tabcontent">	
+								<div class="araxxi sub-panel"></div>
+							</div>
+							<div id="beastmaster_durzag" class="tabcontent">	  
+								<div class="beastmaster_durzag sub-panel"></div>
+							</div>
+							<div id="giant_mole" class="tabcontent">	
+								<div class="giant_mole sub-panel"></div>
+							</div>
+							<div id="gwd1" class="tabcontent">	
+								<div class="gwd1 sub-panel"></div>
+							</div>
+							<div id="gwd2" class="tabcontent">	  
+								<div class="gwd2 sub-panel"></div>
+							</div>							
+							<div id="har-aken" class="tabcontent">	  
+							<div class="har-aken sub-panel"></div>
+							</div>
+							<div id="kalphite_king" class="tabcontent">	  
+							<div class="kalphite_king sub-panel"></div>
+							</div>
+							<div id="legiones" class="tabcontent">	 
+								<div class="legiones sub-panel"></div>
+							</div>
+							<div id="magister" class="tabcontent">	 
+<div class="magister sub-panel"></div>							
+							</div>
+							<div id="nex" class="tabcontent">	  
+								<div class="nex sub-panel"></div>
+							</div>
+							<div id="angel_of_death" class="tabcontent">	  
+								<div class="angel_of_death sub-panel"></div>
+							</div>
+							<div id="queen_black_dragon" class="tabcontent">	
+								<div class="queen_black_dragon sub-panel"></div>
+							</div>
+							<div id="rots" class="tabcontent">	  
+								<div class="rots sub-panel"></div>
+							</div>
+							<div id="telos" class="tabcontent">	  
+								<div class="telos sub-panel"></div>
+							</div>
+							<div id="tzok-jad" class="tabcontent">	
+								<div class="tzok-jad sub-panel"></div>							
+							</div>
+							<div id="vorago" class="tabcontent">	 
+									<div class="vorago sub-panel"></div>
+							</div>
+							<div id="yakamaru" class="tabcontent">	  
+								<div class="yakamaru sub-panel"></div>
+							</div>
+
+						
+						
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="leadership-display"></div>
+					<div class="social_links"></div>
+					<div class="social_links">For questions about the clan, contact staff ranks.</div>
+					<!---<div class="credits">©2018. Site made by @slymonkey</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
