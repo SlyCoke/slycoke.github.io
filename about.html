@@ -1,46 +1,162 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>My First Website</title>	
-	<meta name="author" content="your name" />
+	<title>Vitalis Clan</title>	
+	<meta name="Cools" content="vitalis clan offsite" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link rel="stylesheet" href="styles.css">
-<script src="script.js"></script>
+	<meta name="description" content="Welcome to the offsite of Vitalis. We are a RuneScape clan. We focus on PvM but we are a social clan as well. Come guest and check us out, and make sure to check out our discord!" />	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+	<script src="https://cdn.rawgit.com/Fugiman/Twitch-Channel-Status/1d74252edf89110507cbf3088f9c3eaa38fac9d3/twitch-channel-status.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-database.js"></script>
 </head>
 <body>
-	<div id="header">
-		<div id="nav-container">
-			<div id = "nav-bar">
-				<div id="logo"><h1><a href="/" id="logoLink"></a></h1></div>
-				<div class="topnav" id="myTopnav">
-					<a href="#home" class="active">HOME</a>
-					 <a href="#contact">EVENTS</a>
-					 <a href="#sdf"">GUIDES</a>
-					 <a href="about.html">ABOUT</a>
-					 <a href="#about">HISCORES</a>
-					 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	<div class="page">
+	
+		<div class="header">
+			<div class="nav-container">
+				<div class = "nav-bar">
+					<div class="logo"><h1><a href="/" id="logoLink"></a></h1></div>
+					<div class="topnav" id="myTopnav">
+						<a href="index.html" class="active">HOME</a>
+						<a href="about.html">ABOUT</a>
+						<a href="guides.html">GUIDES</a>
+						<a href="events.html">EVENTS</a>
+						<a href="boss_kc.html">BOSSKC</a>
+						<a href="speed_kill.html">SPEED</a>
+						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">
+							&#9776;
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="content-container">
+			<div class="lol">
+				<div class="content"> 		
+
+					
+					
+					<div class="featured-content-panel about-intro">
+						<div class="panel-content-center">
+							<h1 class="title">About Us </h1>
+							<p class="description">
+								We are a community based and PvM driven clan that is always accepting new members! We're a fast expanding clan with a unique ranking system that benefits PvMers and Skillers alike. We're always looking for PvM teams for Vorago, Raids, etc. 
+							</p>
+						</div>
+					</div>
+				
+					<div class="featured-content-panel ranks">
+						<div class="panel-content">
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Skiller Ranks </h1>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">Recruit</div><div class="def">Starting rank</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">Corporal</div><div class="def">10m clan XP</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">Sergeant</div><div class="def">50m clan XP</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">Lieutenant</div><div class="def">100m clan XP</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">Captain</div><div class="def">200m clan XP</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">Admin</div><div class="def">Cap 3 times + maintain Fealty 3</div>
+							</div>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">PvM Ranks </h1>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">General</div><div class="def">PvM Rank:			
+Gear & Trials required. See below.			</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo"></div><div class ="term">Organiser</div><div class="def">Elite PvM Rank:			
+Separate trials from General. See below.			</div>
+							</div>
+						</div>
+						
+						</div>
+					</div>
+					
+					<div class="featured-content-panel ranks">
+						<div class="panel-content">
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Leadership:Coordinator+ </h1>
+							<p class="subdescription">Application below. Contribute to the clan:Hosting events (masses, teaching, fun events,pvm teams etc). Recruitment. Active in clan discord. Must remain active. </p>
+						</div>
+						<div class="half-panel-content left">
+							<h1 class="subtitle">Leadership ranks: </h1>
+							<div class="term-def-row">
+								<div class="term-logo avatar_head_display"></div><div class ="term rsn">LuckyCharms</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo avatar_head_display"></div><div class ="term rsn">Singhking</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo avatar_head_display"></div><div class ="term rsn">Flaivia</div>
+							</div>
+							<div class="term-def-row">
+								<div class="term-logo avatar_head_display"></div><div class ="term rsn"> Antny</div>
+							</div>
+						</div>
+						
+						</div>
+					</div>
+					
+					<div class="content-panel rules">
+						<div class="panel-content-left">
+							<h1 class="subtitle">Rules</h1>
+							<p class="subdescription">
+								We are a very relaxed clan although we do have some basic rules. If for any reason a problem occurs with another member, please PM a key rank so we can resolve the issue.
+							</p>
+							<p class="bullet-point">
+								Membership required</p>
+							<p class="bullet-point">
+								No racism or politic talk</p>
+							<p class="bullet-point">
+								English chat</p>
+							<p class="bullet-point">
+								Follow game rules</p>
+							<p class="bullet-point">
+								No drama</p>
+								<p class="bullet-point">
+								No Scamming/luring</p>
+							<p class="bullet-point">
+								No Crashing clan members</p>
+							<p class="bullet-point">
+								Banter is ok but be respectful. Very little tolerance for disrespectful players and trolls</p>
+			
+							
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="leadership-display"></div>
+					<div class="social_links"></div>
+					<div class="social_links">For questions about the clan, contact staff ranks.</div>
+					<!---<div class="credits">©2018. Site made by @slymonkey</div>-->
 				</div>
 			</div>
 		</div>
 	</div>
-	
-	
-
-	<div id="content-container">
-    	<div id="content"> 			
-			<div class="tabcontent">
-			
-				<h1> About us </h1>
-				
-				<p> dsffds</p>
-
-			</div>
-		</div>
-	</div>
-
-	
-
 </body>
 </html>
